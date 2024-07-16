@@ -1,0 +1,56 @@
+/**
+	gid.css
+	========
+	
+	Classes
+	-------
+	
+	- 'line'
+	
+	  This class
+	
+	- 'col'
+	
+	  This class
+	
+*/
+
+.overflow {overflow: hidden;_overflow:visible;_zoom:1}
+
+/* ====== LINE ====== */  
+.line:after {content: ".";display: block;height: 0;clear: both;visibility: hidden}
+.line {*zoom:1}
+
+/* ====== COLS ====== */
+.col {float:left;_zoom:1}
+.last-col {.overflow;float:none;_position:relative; _left:-3px; _margin-right: -3px;_width:auto}
+.col-main {.overflow}
+.col-left {float:left; width: auto; _margin-right:-3px}
+.col-right {float:right; width: auto; _margin-left:-3px}
+
+/* ====== WIDTHS ====== */
+.width-auto {width:auto;}
+.width-1of1 {width:100%;}	/* set 100% width outside of layouts */
+.col.width-1of1 {float:none; width: auto;}	/* this doesnt set width=100% so make this context sensitive */
+.width-1of2 {width:50%;}
+.width-1of3 {width:33.33333%;}
+.width-2of3 {width:66.66666%;}
+.width-1of4 {width:25%;}
+.width-3of4 {width:75%;}
+.width-1of5 {width:20%;}
+.width-2of5 {width:40%;}
+.width-3of5 {width:60%;}
+.width-4of5 {width:80%;}
+
+/* ====== FIXED PIXELS WIDTHS ====== */
+.width-160 {width:160px}
+.width-180 {width:180px}
+.width-240 {width:240px}
+.width-300 {width:300px}
+.width-960 {width:960px}
+.width-230 {width:230px}
+
+/* ====== CLEARING STYLES ====== */
+.clear-left {clear: left;}
+.clear-right {clear: right;}
+.clear {clear: both;}

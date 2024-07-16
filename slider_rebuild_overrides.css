@@ -1,0 +1,231 @@
+
+
+#m.rebuild {
+  width: 972px;
+  height: 810px;
+  position: relative;
+}
+  #m.rebuild.detail {
+    height: 486px;
+  }
+#m.rebuild #m-inner {
+  width: 2916px;
+  height: 810px;
+  position: absolute;
+  left: -972px;
+}
+  #m.rebuild.detail #m-inner {
+    height: 486px;
+  }
+  .csstransitions #m.rebuild #m-inner.csstransition {
+    -o-transition: left .4s ease-in-out;
+    -moz-transition: left .4s ease-in-out;
+    -webkit-transition: left .4s ease-in-out;
+    -ms-transition: left .4s ease-in-out;
+    transition: left .4s ease-in-out;
+  }
+  .csstransitions #m.rebuild #m-inner.notransition {
+    -o-transition: left 0s ease-in-out;
+    -moz-transition: left 0s ease-in-out;
+    -webkit-transition: left 0s ease-in-out;
+    -ms-transition: left 0s ease-in-out;
+    transition: left 0s ease-in-out;
+  }
+#m.rebuild .m-panel {
+  width: 972px;
+  height: 810px;
+  overflow: hidden;
+  background: url('../images/contemplative_478x478.jpg') no-repeat 0 0;
+}
+  #m.rebuild.detail .m-panel {
+    background-image: none;
+  }
+  .ie8 #m.rebuild .m-panel, 
+  .ie7 #m.rebuild .m-panel {
+    zoom: 1;
+  }
+  #m.rebuild.loading .m-panel {
+    background: none;
+  }
+#m.rebuild .m-cell, 
+#m.rebuild .m-blank {
+  background: #181818;
+}
+  #m.rebuild #m-panel-current.loaded .m-cell a:hover {
+    background: #FFDB76;
+  }
+  #m.rebuild #m-panel-current.loaded .current a:hover {
+    background: #1f1f1f;
+  }
+  #m.rebuild #m-panel-current.loading .m-cell {
+    background: transparent url("../images/empty.gif") repeat scroll 0 -8px;
+  }
+  #m.rebuild #m-panel-current .m-blank, 
+  #m.rebuild #m-panel-current.loading .m-blank, 
+  #m.rebuild #m-panel-current.loaded .m-blank, 
+  #m.rebuild #m-panel-current.loaded .m-blank a:hover {
+    background: transparent;
+  }
+  #m.rebuild .m-blank {
+    background: transparent !important;
+  }
+#m.rebuild .m-empty, 
+#m.rebuild #m-panel-current .m-empty, 
+#m.rebuild #m-panel-current.loading .m-empty, 
+#m.rebuild #m-panel-current.loaded .m-empty {
+  background: transparent url("../images/empty.gif") repeat scroll 0 -8px;
+}
+
+#m.rebuild .m-cell .p {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+}
+#m.rebuild .m-cell .p img {
+  z-index: 99;
+  opacity: .5;
+  display: block;
+}
+  .ie8 #m.rebuild .m-cell .p img, 
+  .ie7 #m.rebuild .m-cell .p img {
+    zoom: 1;
+  }
+  #m.rebuild .touch .p img {
+    opacity: 1;
+  }
+  .no-touch #m.rebuild .m-cell .p img, 
+  .no-touch #m.rebuild #m-panel-current.loaded .m-cell .p img {
+    -o-transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+    -ms-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
+  }
+  #m.rebuild #m-panel-current .m-cell .p img {
+    opacity: 1;
+  }
+    #m.rebuild #m-panel-current .m-cell .p:hover img {
+      opacity: 0;
+    }
+    #m.rebuild .m-panel.loading .m-cell .p img, 
+    #m.rebuild #m-panel-current.loading .m-cell .p img {
+      opacity: 0;
+    }
+    
+    .ie8 #m-panel-current .m-cell .p:hover img , 
+    .ie7 #m-panel-current .m-cell .p:hover img, 
+    .ie8 #m.rebuild .m-panel.loading .m-cell .p img, 
+    .ie7 #m.rebuild #m-panel-current.loading .m-cell .p img
+    .ie8 #m.rebuild .m-panel.loading .m-cell .p img, 
+    .ie7 #m.rebuild #m-panel-current.loading .m-cell .p img {
+      display: none;
+    }
+    
+  #m.rebuild .current .p img {
+    opacity: 0 !important;
+  }
+    
+#m.rebuild .m-cell .p h2,
+#m.rebuild .m-cell .p .pubdate,
+#m.rebuild .typecat {
+  z-index: 1;
+  display: none;
+}
+  #m.rebuild #m-panel-current.loaded .m-cell .p:hover h2, 
+  #m.rebuild #m-panel-current.loaded .m-cell .p:hover .pubdate, 
+  #m.rebuild #m-panel-current.loaded .m-cell .p:hover .typecat {
+    display: block;
+  }
+  #m.rebuild .current .p h2, 
+  #m.rebuild .current .p .pubdate, 
+  #m.rebuild .current .typecat {
+    display: block !important;
+  }
+  #m.rebuild #m-panel-current.loading .m-cell .p h2, 
+  #m.rebuild #m-panel-current.loading .m-cell .p .pubdate, 
+  #m.rebuild #m-panel-current.loading .m-cell .typecat {
+    display: none !important;
+  }
+  
+#m.rebuild #mp-right, 
+#m.rebuild #mp-left {
+  z-index: 99;
+}
+
+
+#m.rebuild #mp-right, 
+#m.rebuild #mp-left {
+  opacity: 1;
+}
+  .no-touch #m.rebuild #mp-right, 
+  .no-touch #m.rebuild #mp-left {
+    -o-transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+    -ms-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
+  }
+  #m.rebuild #mp-right.hide, 
+  #m.rebuild #mp-left.hide {
+    opacity: 0;
+    display: block;
+  }
+
+
+
+
+/* hmm I have seen to broke the related articles */
+
+
+#r-inner .m-cell .p {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  background: #FFDB76;
+}
+  #r-inner .m-cell .p:hover {
+    background: #FFDB76;
+  }
+  #r-inner .m-cell .p h2,
+  #r-inner .m-cell .p .pubdate,
+  #r-inner .m-cell .p .typecat {
+    display: block;
+    z-index: 1;
+  }
+    #r-inner .m-cell .p:hover h2,
+    #r-inner .m-cell .p:hover .pubdate,
+    #r-inner .m-cell .p:hover .typecat {
+      display: block;
+    }
+  #r-inner .m-cell .p img {
+    z-index: 99;
+    -o-transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+    -ms-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
+  }
+    .ie8 #r-inner .m-cell .p img, 
+    .ie7 #r-inner .m-cell .p img {
+      zoom: 1;
+    }
+    #r-inner .m-cell .p:hover img {
+      opacity: 0;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+      filter: alpha(opacity=100);
+    }
+      .ie8 #r-inner .m-cell .p:hover img, 
+      .ie7 #r-inner .m-cell .p:hover img {
+        display: none;
+      }
+    
+/*
+removed, but here's the html incase we re-instate, put in m-panel-current: 
+<img src="/wp-content/themes/lifeandtimes/images/sitewide/loading_mosaic.gif" id="loading_spinner">
+*/  
+#loading_spinner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -50px 0 0 -50px;
+}
